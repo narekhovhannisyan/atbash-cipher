@@ -1,3 +1,9 @@
 const atbash = require('./atbash')
 
-console.log(atbash(process.env.string))
+const plainText = process.env.string
+
+const encryptedText = atbash(plainText)
+console.log(encryptedText)
+
+const decryptedText = atbash(plainText)
+console.log(decryptedText)
